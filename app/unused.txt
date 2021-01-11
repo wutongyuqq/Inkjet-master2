@@ -120,6 +120,7 @@ org.apache.commons.collections4.map.AbstractReferenceMap$ReferenceKeySet
 kotlin.jvm.internal.LongSpreadBuilder
 me.samlss.framework.utils.FragmentUtils$Args
 com.google.zxing.qrcode.QRCodeWriter
+com.ut.device.a
 kotlin.text.StringsKt___StringsKt$windowedSequence$1
 me.samlss.framework.security.SHA
 kotlin.coroutines.experimental.Continuation
@@ -634,6 +635,7 @@ me.samlss.framework.struct.FunctionNoParamWithResult
     public void <init>(java.lang.String)
     public abstract java.lang.Object function()
 me.samlss.inkjet.R$array
+com.ta.utdid2.c.a.d
 butterknife.internal.Constants
 org.greenrobot.greendao.rx.RxQuery
 kotlin.sequences.SequencesKt___SequencesKt$minus$3$iterator$1
@@ -1109,6 +1111,7 @@ kotlin.collections.CollectionsKt__MutableCollectionsJVMKt
     public static final java.util.List shuffled(java.lang.Iterable,java.util.Random)
     public void <init>()
 org.apache.commons.collections4.IterableUtils$11
+com.ta.utdid2.c.a.c
 org.apache.commons.collections4.functors.AbstractQuantifierPredicate
 org.apache.commons.collections4.IterableUtils$12
 org.greenrobot.greendao.query.AbstractQueryData
@@ -1271,6 +1274,7 @@ com.bigkoo.pickerview.R$style
     private void <init>()
 org.apache.commons.collections4.queue.TransformedQueue
 org.greenrobot.greendao.rx.RxQuery$1
+com.ta.utdid2.device.UTDevice
 kotlin.sequences.SequencesKt___SequencesKt$zip$1
 kotlin.coroutines.experimental.CoroutineContext$Element$DefaultImpls
 org.apache.commons.collections4.bidimap.AbstractDualBidiMap$EntrySetIterator
@@ -1286,6 +1290,7 @@ org.apache.commons.collections4.sequence.DeleteCommand
 org.greenrobot.greendao.annotation.Transient
 org.greenrobot.greendao.query.CloseableListIterator
 org.apache.commons.collections4.map.AbstractLinkedMap
+com.ta.utdid2.c.a.e
 me.samlss.ebs.EBSOpenProjectParameter
     public void <init>(int,java.lang.String)
     public int getDifferentPrintHeadOpen()
@@ -1447,6 +1452,7 @@ okio.HashingSink$Companion
 kotlin.ranges.IntProgressionIterator
     public final int getStep()
 com.google.zxing.client.result.VINParsedResult
+com.ta.utdid2.device.c
 com.google.zxing.oned.UPCEWriter
 com.google.zxing.datamatrix.encoder.SymbolShapeHint
 kotlin.sequences.DropWhileSequence$iterator$1
@@ -1468,6 +1474,7 @@ org.apache.commons.collections4.functors.UniquePredicate
 me.samlss.inkjet.ui.dialogs.PrintDialog1
     public void onDestroy()
 me.samlss.framework.utils.CacheDiskUtils$DiskCacheManager$1$1
+com.ta.utdid2.b.a.b
 com.bigkoo.pickerview.view.WheelOptions$5
 org.greenrobot.greendao.rx.RxTransaction$1
 kotlin.sequences.SequencesKt___SequencesKt$zipWithNext$1
@@ -1488,6 +1495,7 @@ kotlin.collections.DoubleIterator
 okio.HashingSource$Companion
 kotlin.jvm.internal.FloatSpreadBuilder
 kotlin.TypeAliasesKt
+com.ta.utdid2.device.b
 com.google.zxing.oned.Code128Writer$CType
 me.samlss.framework.utils.ServiceUtils
 com.google.zxing.pdf417.decoder.DecodedBitStreamParser
@@ -1627,12 +1635,14 @@ org.greenrobot.greendao.annotation.NotNull
 org.greenrobot.greendao.rx.RxDao$1
 kotlin.collections.State
 kotlin.sequences.TakeSequence
+com.ta.utdid2.device.d
 org.apache.commons.collections4.Transformer
 org.apache.commons.collections4.sequence.KeepCommand
 org.intellij.lang.annotations.JdkConstants$TabPlacement
 org.apache.commons.collections4.list.PredicatedList
 org.intellij.lang.annotations.MagicConstant
 kotlin.internal.PlatformImplementationsKt
+com.ta.utdid2.b.a.c
 me.samlss.framework.listeners.KeyboardActionListener$KeyBoardListener
 org.greenrobot.greendao.query.LazyList
 kotlin.internal.contracts.Returns
@@ -1814,19 +1824,23 @@ butterknife.OnPageChange
     public abstract butterknife.OnPageChange$Callback callback()
 kotlin.coroutines.experimental.SafeContinuation$Fail
 com.bigkoo.pickerview.view.WheelOptions$3
+com.ta.utdid2.b.a.d
 com.google.zxing.aztec.encoder.State
 org.apache.commons.collections4.list.TransformedList
 kotlin.sequences.FlatteningSequence
 kotlin.concurrent.TimersKt
 com.google.zxing.multi.qrcode.QRCodeMultiReader
+com.ta.utdid2.device.e
 kotlin.collections.ArraysKt___ArraysKt$withIndex$6
 me.samlss.framework.utils.CacheDoubleUtils
+com.ta.utdid2.c.a.b$a
 kotlin.jvm.functions.Function18
 butterknife.internal.ListenerMethod
 me.samlss.framework.R
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$9
 kotlin.reflect.KProperty1
 kotlin.sequences.SequencesKt___SequencesKt$elementAt$1
+com.ta.utdid2.b.a.b$c
 com.google.zxing.client.result.ProductParsedResult
 org.apache.commons.collections4.bidimap.AbstractDualBidiMap$EntrySet
 kotlin.ranges.ClosedFloatingPointRange
@@ -1892,15 +1906,21 @@ me.samlss.inkjet.ui.dialogs.PrintDialog
     public void show(me.samlss.inkjet.db.PrintBean)
 org.apache.commons.collections4.bidimap.AbstractDualBidiMap$KeySetIterator
 com.bigkoo.pickerview.view.WheelOptions$4
+com.ta.utdid2.b.a.e
 kotlin.sequences.DropWhileSequence
 org.apache.commons.collections4.map.StaticBucketMap$Node
 kotlin.text.MatchGroupCollection
 kotlin.jvm.internal.PropertyReference2
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$8
 me.samlss.ebs.EBSLoginParameter
+com.ut.device.UTDevice
+    public static java.lang.String getUtdid(android.content.Context)
+    public static java.lang.String getAid(java.lang.String,java.lang.String,android.content.Context)
+    public static void getAidAsync(java.lang.String,java.lang.String,android.content.Context,com.ut.device.a)
 kotlin.collections.ArraysKt___ArraysKt$withIndex$5
 org.greenrobot.greendao.rx.RxDao$3
 kotlin.jvm.functions.Function17
+com.ta.utdid2.c.a.b$b
 me.samlss.framework.R$integer
 me.samlss.inkjet.ui.dialogs.PrintDialog2
     public void onDestroy()
@@ -2056,16 +2076,20 @@ kotlin.text.CharsKt
 org.apache.commons.collections4.map.UnmodifiableEntrySet$UnmodifiableEntrySetIterator
 org.apache.commons.collections4.multiset.AbstractMapMultiSet$EntrySetIterator
 org.apache.commons.collections4.multimap.AbstractMultiValuedMap$Values
+com.ta.utdid2.b.a.f
 com.bigkoo.pickerview.view.WheelOptions$1
 okio.HashingSource
 org.apache.commons.collections4.set.AbstractSerializableSetDecorator
 com.google.zxing.client.result.AddressBookDoCoMoResultParser
 org.greenrobot.greendao.rx.RxDao$12
+com.ta.utdid2.a.b$a
 kotlin.jvm.functions.Function16
 kotlin.Lazy
 kotlin.reflect.KTypeProjection$Companion
+com.ta.utdid2.b.a.b$a
 org.apache.commons.collections4.map.PassiveExpiringMap
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$7
+com.ta.utdid2.a.a
 kotlin.coroutines.experimental.SafeContinuation$Companion
 kotlin.ranges.ClosedDoubleRange
 org.apache.commons.collections4.bag.AbstractMapBag$BagIterator
@@ -2129,6 +2153,7 @@ com.bigkoo.pickerview.view.WheelOptions$2
 kotlin.jvm.internal.markers.KMutableMap$Entry
 org.apache.commons.collections4.map.UnmodifiableSortedMap
 com.google.zxing.client.result.SMSMMSResultParser
+com.ta.utdid2.b.a.g
 me.samlss.inkjet.db.InkAnnalDao
     public void <init>(org.greenrobot.greendao.internal.DaoConfig)
     public void readEntity(android.database.Cursor,me.samlss.inkjet.db.InkAnnal,int)
@@ -2153,6 +2178,7 @@ org.greenrobot.greendao.internal.DaoConfig
 okio.Throttler
 butterknife.OnFocusChange
     public abstract int[] value()
+com.ta.utdid2.b.a.b$b
 org.apache.commons.collections4.SplitMapUtils$1
 com.google.zxing.EncodeHintType
 kotlin.collections.ArraysKt___ArraysKt$withIndex$7
@@ -2197,6 +2223,7 @@ me.samlss.inkjet.ui.dialogs.PrintDialog2_ViewBinding
 org.apache.commons.collections4.multiset.SynchronizedMultiSet
 kotlin.properties.Delegates$vetoable$1
 kotlin.io.FileTreeWalk
+com.ta.utdid2.a.c
 org.apache.commons.collections4.iterators.PushbackIterator
 kotlin.reflect.KMutableProperty2$Setter
 org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer
@@ -2205,6 +2232,7 @@ me.samlss.framework.utils.RegexUtils
 kotlin.reflect.KProperty$Getter
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$8
 org.apache.commons.collections4.map.StaticBucketMap$EntrySet
+com.ta.utdid2.b.a.h
 cn.bingoogolapple.qrcode.zxing.R
 butterknife.internal.ListenerClass$NONE
 me.samlss.inkjet.db.ProjectDao
@@ -2374,9 +2402,11 @@ kotlin.jvm.functions.Function6
 me.samlss.framework.utils.ThreadUtils$Deliver
     private void <init>()
 butterknife.runtime.R$attr
+com.ta.utdid2.b.a.i
 org.apache.commons.collections4.bidimap.DualTreeBidiMap
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$4
 org.greenrobot.greendao.query.CountQuery$1
+com.ta.utdid2.a.b
 okio.Pipe$source$1
 org.apache.commons.collections4.bidimap.TreeBidiMap$ViewMapIterator
     public java.lang.Comparable getKey()
@@ -2586,6 +2616,7 @@ me.samlss.framework.utils.KeyboardUtils
 org.apache.commons.collections4.iterators.LoopingIterator
 com.google.zxing.aztec.decoder.Decoder
     public static java.lang.String highLevelDecode(boolean[])
+com.ta.utdid2.device.a
 me.samlss.framework.security.MD5
     public void <init>()
 me.samlss.inkjet.config.InkConfig
@@ -2649,6 +2680,7 @@ butterknife.BindViews
     public abstract int[] value()
 me.samlss.inkjet.ui.fragments.ExcelInkjetFragment_ViewBinding
     public void unbind()
+com.ta.utdid2.b.a.j
 kotlin.KotlinVersion
 org.apache.commons.collections4.trie.AbstractPatriciaTrie$KeySet$KeyIterator
 kotlin.jvm.JvmField
@@ -5344,6 +5376,7 @@ org.apache.commons.collections4.list.AbstractSerializableListDecorator
 kotlin.io.FileTreeWalk$FileTreeWalkIterator
 me.samlss.okhttp.g
 com.contrarywind.view.R$attr
+com.ta.utdid2.b.a.a
 com.google.zxing.oned.rss.RSSUtils
     private void <init>()
 me.samlss.framework.utils.KeyboardUtils$1
@@ -5351,6 +5384,7 @@ org.apache.commons.collections4.list.SetUniqueList$SetListListIterator
 kotlin.text.MatchResult$DefaultImpls
 kotlin.properties.ReadWriteProperty
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$1
+com.ta.utdid2.c.a.d$a$a
 com.google.zxing.common.detector.MathUtils
     private void <init>()
 cn.bingoogolapple.qrcode.zxing.BuildConfig
@@ -5939,6 +5973,7 @@ org.apache.commons.collections4.keyvalue.MultiKey
 kotlin.internal.contracts.ContractBuilderKt
 org.apache.commons.collections4.list.LazyList
 kotlin.jvm.internal.Ref
+com.ta.utdid2.c.a.b
 org.greenrobot.greendao.query.DeleteQuery$QueryData
 org.greenrobot.eventbus.meta.SubscriberMethodInfo
 kotlin.collections.AbstractCollection
@@ -6041,6 +6076,7 @@ org.apache.commons.collections4.multiset.AbstractMultiSetDecorator
 com.google.zxing.multi.GenericMultipleBarcodeReader
 org.apache.commons.collections4.list.AbstractLinkedList$LinkedListIterator
 me.samlss.framework.log.XLog
+com.ta.utdid2.c.a.a
 me.samlss.framework.utils.ActivityUtils
     private void <init>()
     public static android.app.Activity getActivityByView(android.view.View)
@@ -6569,6 +6605,7 @@ com.loc.aj
 org.greenrobot.greendao.identityscope.IdentityScopeObject
     public boolean detach(java.lang.Object,java.lang.Object)
     public void clear()
+com.ta.utdid2.c.a.d$a
 kotlin.io.LinesSequence$iterator$1
 butterknife.OnItemLongClick
     public abstract int[] value()
