@@ -57,6 +57,7 @@ public class DataListPageModel {
     public DataListPageModel(FetchExcelFragment fetchExcelFragment){
         mFetchExcelFragment = fetchExcelFragment;
         mSet.add("物资编码");
+        
         mSet.add("物资简称");
         mSet.add("物资类型");
         mSet.add("规格");
