@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/qmui_config_color_background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/app_header_color"
+        android:fitsSystemWindows="true"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="喷点大小（1-20）"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+                <cn.com.cesgroup.numpickerview.NumberPickerView
+                    android:id="@+id/np_spot_size"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:editable="false"
+                    app:subBackground="@drawable/number_picker_button_bg"
+                    app:addBackground="@drawable/number_picker_button_bg"
+                    app:buttonWidth="40dp"
+                    app:editextWidth="60dp"
+                    android:layout_height="wrap_content"
+                    app:textColor="@android:color/black"
+                    app:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="分辨率（100-2000)"
+                    android:singleLine="true"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+                <cn.com.cesgroup.numpickerview.NumberPickerView
+                    android:id="@+id/np_resolution"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:buttonWidth="40dp"
+                    app:editable="false"
+                    app:editextWidth="60dp"
+                    app:subBackground="@drawable/number_picker_button_bg"
+                    app:addBackground="@drawable/number_picker_button_bg"
+                    android:layout_height="wrap_content"
+                    app:textColor="@android:color/black"
+                    app:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="重复喷印（1-20)"
+                    android:singleLine="true"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+                <cn.com.cesgroup.numpickerview.NumberPickerView
+                    android:id="@+id/np_repeat"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:buttonWidth="40dp"
+                    app:editable="false"
+                    app:editextWidth="60dp"
+                    app:subBackground="@drawable/number_picker_button_bg"
+                    app:addBackground="@drawable/number_picker_button_bg"
+                    android:layout_height="wrap_content"
+                    app:textColor="@android:color/black"
+                    app:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="喷印间隔（0-1000)"
+                    android:singleLine="true"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+                <cn.com.cesgroup.numpickerview.NumberPickerView
+                    android:id="@+id/np_interval"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:buttonWidth="40dp"
+                    app:editable="false"
+                    app:editextWidth="60dp"
+                    app:subBackground="@drawable/number_picker_button_bg"
+                    app:addBackground="@drawable/number_picker_button_bg"
+                    android:layout_height="wrap_content"
+                    app:textColor="@android:color/black"
+                    app:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="初始距离（0-1000)"
+                    android:singleLine="true"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+                <cn.com.cesgroup.numpickerview.NumberPickerView
+                    android:id="@+id/np_distance"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:buttonWidth="40dp"
+                    app:editable="false"
+                    app:editextWidth="60dp"
+                    app:subBackground="@drawable/number_picker_button_bg"
+                    app:addBackground="@drawable/number_picker_button_bg"
+                    android:layout_height="wrap_content"
+                    app:textColor="@android:color/black"
+                    app:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="压力（15-45)"
+                    android:singleLine="true"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+                <cn.com.cesgroup.numpickerview.NumberPickerView
+                    android:id="@+id/np_pressure"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:buttonWidth="40dp"
+                    app:editable="false"
+                    app:editextWidth="60dp"
+                    app:subBackground="@drawable/number_picker_button_bg"
+                    app:addBackground="@drawable/number_picker_button_bg"
+                    android:layout_height="wrap_content"
+                    app:textColor="@android:color/black"
+                    app:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="喷印方向"
+                    android:singleLine="true"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+                <FrameLayout
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/acs_direction"
+                    android:spinnerMode="dialog"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/print_direction"
+                    android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="水平翻转"
+                    android:singleLine="true"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+               <FrameLayout
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content">
+
+                   <androidx.appcompat.widget.SwitchCompat
+                       android:id="@+id/tb_horizontal_flip"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+               </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="垂直翻转"
+                    android:singleLine="true"
+                    android:textColor="@color/qmui_config_color_black" />
+
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/tb_vertical_flip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <me.samlss.ui.alpha.QMUIAlphaButton
+                android:id="@+id/btn_confirm"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="保存设置"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</me.samlss.ui.widget.QMUIWindowInsetLayout>

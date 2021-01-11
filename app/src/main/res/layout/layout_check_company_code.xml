@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.QMUIWindowInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E6E6E6"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/bg_logo"
+                android:background="@android:color/white"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <me.samlss.ui.widget.roundwidget.QMUIRoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:qmui_backgroundColor="@android:color/white"
+                app:qmui_borderWidth="1dp"
+                app:qmui_borderColor="@color/qmui_config_color_gray_8"
+                app:qmui_radius="10dp">
+
+                <me.samlss.framework.widgets.ClearEditText
+                    android:id="@+id/edit_text"
+                    android:theme="@style/MyEditText"
+                    android:layout_marginTop="50dp"
+                    android:textSize="14sp"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/sp_spinner"
+                    android:hint="@string/input_company_code"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textColorHint="@color/qmui_config_color_gray_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <me.samlss.ui.alpha.QMUIAlphaButton
+                    android:id="@+id/btn_activate"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:text="@string/activate_use"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </me.samlss.ui.widget.roundwidget.QMUIRoundLinearLayout>
+
+            <TextView
+                android:id="@+id/tv_log"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@color/qmui_config_color_red"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="联系电话：0755-85250374"
+                    android:textColor="@color/qmui_config_color_gray_5"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="商务合作：db@call321.com"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/qmui_config_color_gray_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="版权所有：深圳识语网络科技有限公司"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/qmui_config_color_gray_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</me.samlss.ui.widget.QMUIWindowInsetLayout>

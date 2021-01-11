@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qmui_config_color_background"
+    tools:context=".ui.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/app_header_color"
+        android:fitsSystemWindows="true"></View>
+
+
+    <LinearLayout
+        android:layout_marginTop="?actionBarSize"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_above="@+id/layout_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/layout_action"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/print_code"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_handle_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/connect_device"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+</me.samlss.ui.widget.QMUIWindowInsetLayout>

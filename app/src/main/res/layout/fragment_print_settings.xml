@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qmui_config_color_background"
+    tools:context=".ui.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/app_header_color"
+        android:fitsSystemWindows="true"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_stick_header" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="自动创建wifi项目"
+                        android:singleLine="true"
+                        android:textColor="@color/qmui_config_color_black" />
+
+
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/tb_auto_wifi"
+                            android:checked="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/app_color_green"
+                    android:text="提示信息"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_bt_state"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:text="蓝牙未连接"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_wifi_state"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Wifi未连接"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/app_color_green"
+                    android:text="喷码机控制"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="喷码机IP地址："
+                        android:textColor="@color/qmui_config_color_gray_2"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edit_wifi_ip"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:inputType="phone"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/qmui_config_color_black"
+                        android:textColorHint="@color/qmui_config_color_gray_3"
+                        android:textSize="14sp"
+                        android:theme="@style/MyEditText" />
+
+                        <me.samlss.ui.alpha.QMUIAlphaTextView
+                            android:id="@+id/btn_ip_test"
+                            android:text="连接"
+                            android:gravity="center"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/qmui_config_color_gray_8" />
+
+                <RelativeLayout
+                    android:background="?selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/layout_print_param"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="参数设置"
+                        android:textColor="@color/qmui_config_color_gray_2"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:src="@drawable/ic_right_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/qmui_config_color_gray_8" />
+
+                <RelativeLayout
+                    android:background="?selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:id="@+id/layout_set_font"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="字体设置"
+                        android:textColor="@color/qmui_config_color_gray_2"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_font"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right|center"
+                        android:singleLine="true"
+                        android:layout_toRightOf="@+id/text"
+                        android:layout_toLeftOf="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_right_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/qmui_config_color_gray_8" />
+
+                <RelativeLayout
+                    android:background="?selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:id="@+id/layout_font_size"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/text_fs"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="字体尺寸"
+                        android:textColor="@color/qmui_config_color_gray_2"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:background="@drawable/sp_spinner"
+                        android:gravity="center"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/et_font_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:gravity="right|center"
+                            android:layout_marginRight="10dp"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_font_size_bottom_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/qmui_config_color_gray_8" />
+
+                <RelativeLayout
+                    android:background="?selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/layout_print_setting_des"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="配置说明"
+                        android:textColor="@color/qmui_config_color_gray_2"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:src="@drawable/ic_right_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/qmui_config_color_gray_8" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/app_color_green"
+                    android:text="Excel喷码"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="连续喷码"
+                        android:singleLine="true"
+                        android:textColor="@color/qmui_config_color_gray_2" />
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_continuous_print"
+                        android:layout_marginLeft="10dp"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+<!--                <View-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@color/qmui_config_color_gray_8" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginRight="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="固定长度"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textColor="@color/qmui_config_color_gray_2" />-->
+
+
+<!--                    <androidx.appcompat.widget.SwitchCompat-->
+<!--                        android:id="@+id/switch_fixed_length"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:checked="false"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+<!--                </LinearLayout>-->
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</me.samlss.ui.widget.QMUIWindowInsetLayout>

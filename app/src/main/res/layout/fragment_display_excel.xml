@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/app_header_color"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_rootview"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_error"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/icon_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="@string/display_excel_failed"
+                android:textColor="@color/qmui_config_color_gray_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <me.samlss.ui.alpha.QMUIAlphaButton
+                android:id="@+id/btn_open_with_others"
+                android:layout_marginTop="20dp"
+                android:text="@string/open_with_other_apps"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <me.samlss.ui.alpha.QMUIAlphaButton
+                android:id="@+id/btn_retry"
+                android:layout_marginTop="20dp"
+                android:text="@string/retry"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

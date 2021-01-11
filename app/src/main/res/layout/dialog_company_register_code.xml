@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <me.samlss.framework.widgets.ClearEditText
+        android:id="@+id/edit_text"
+        android:theme="@style/MyEditText"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="@string/input_company_code"
+        android:inputType="textEmailAddress"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:textColor="@color/qmui_config_color_black"
+        android:textColorHint="@color/qmui_config_color_gray_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <me.samlss.ui.alpha.QMUIAlphaButton
+        android:id="@+id/btn_activate"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/activate_use"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

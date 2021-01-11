@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/qmui_config_color_background"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <View
+        android:fitsSystemWindows="true"
+        android:background="@color/app_header_color"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_stick_header"/>
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_change_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/change_psw"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_version_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/version_info"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_verify_company_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/re_input_company_code"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_update_auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="更新授权"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</me.samlss.ui.widget.QMUIWindowInsetLayout>

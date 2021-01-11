@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color_blue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qmui_config_color_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_company_logo"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="60dp" />
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_back"
+                    android:background="?selectableItemBackground"
+                    android:src="@drawable/ic_arrow_back_white_128dp"
+                    android:padding="12dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+            <me.samlss.ui.widget.roundwidget.QMUIRoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:qmui_backgroundColor="@android:color/white"
+                app:qmui_borderWidth="1dp"
+                app:qmui_borderColor="@color/qmui_config_color_gray_8"
+                app:qmui_radius="10dp">
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/account"
+                        android:textColor="@color/qmui_config_color_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp" />
+
+                    <me.samlss.framework.widgets.ClearEditText
+                        android:id="@+id/edit_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:hint="@string/account_hint"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/qmui_config_color_black"
+                        android:textColorHint="@color/qmui_config_color_gray_3"
+                        android:textSize="14sp"
+                        android:theme="@style/MyEditText" />
+                </LinearLayout>
+
+                <View
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/qmui_config_color_gray_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_psw"
+                        android:layout_centerVertical="true"
+                        android:text="@string/password"
+                        android:textColor="@color/qmui_config_color_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp" />
+
+                    <me.samlss.framework.widgets.ClearEditText
+                        android:id="@+id/edit_password"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_psw"
+                        android:layout_toLeftOf="@+id/iv_toggle_psw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/password_hint"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/qmui_config_color_black"
+                        android:textColorHint="@color/qmui_config_color_gray_3"
+                        android:textSize="14sp"
+                        android:theme="@style/MyEditText" />
+
+                    <ImageView
+                        android:id="@+id/iv_toggle_psw"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/icon_edit_psw_hide"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/qmui_config_color_gray_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <me.samlss.ui.alpha.QMUIAlphaButton
+                    android:id="@+id/btn_login"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </me.samlss.ui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</me.samlss.ui.widget.QMUIWindowInsetLayout>

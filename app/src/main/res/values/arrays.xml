@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sp_format" >
+        <item>标准</item>
+        <item>十六进制</item>
+    </string-array>
+
+    <string-array name="map_name" >
+        <item>高德地图</item>
+        <item>腾讯地图</item>
+        <item>百度地图</item>
+        <item>谷歌地图</item>
+    </string-array>
+
+    <string-array name="sp_data_col" >
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="print_direction" >
+        <item>↔</item>
+        <item>→</item>
+        <item>←</item>
+        <item>⇆</item>
+    </string-array>
+</resources>

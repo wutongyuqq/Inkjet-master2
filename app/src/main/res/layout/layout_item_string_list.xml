@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.dialog.QMUIDialogMenuItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?selectableItemBackground"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/qmui_config_color_gray_8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</me.samlss.ui.widget.dialog.QMUIDialogMenuItemView>

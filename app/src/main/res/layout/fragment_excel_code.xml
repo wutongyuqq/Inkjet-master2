@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/qmui_config_color_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <View
+        android:fitsSystemWindows="true"
+        android:background="@color/app_header_color"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_stick_header"/>
+
+        <me.samlss.ui.widget.roundwidget.QMUIRoundLinearLayout
+            android:orientation="horizontal"
+            app:qmui_backgroundColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_data_list"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <me.samlss.ui.widget.roundwidget.QMUIRoundFrameLayout
+                    android:padding="10dp"
+                    app:qmui_borderWidth="1dp"
+                    app:qmui_borderColor="#3D64F9"
+                    app:qmui_radius="45dp"
+                    app:qmui_backgroundColor="#153D64F9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_data_list"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                </me.samlss.ui.widget.roundwidget.QMUIRoundFrameLayout>
+
+                <TextView
+                    android:text="@string/data_list"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/qmui_config_color_gray_9"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/layout_excel_collection"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <me.samlss.ui.widget.roundwidget.QMUIRoundFrameLayout
+                    android:padding="10dp"
+                    app:qmui_borderWidth="1dp"
+                    app:qmui_borderColor="#FC5160"
+                    app:qmui_radius="45dp"
+                    app:qmui_backgroundColor="#15FC5160"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/icon_data_clound"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </me.samlss.ui.widget.roundwidget.QMUIRoundFrameLayout>
+
+                <TextView
+                    android:text="@string/excel_data_collection"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </me.samlss.ui.widget.roundwidget.QMUIRoundLinearLayout>
+
+    </LinearLayout>
+
+</me.samlss.ui.widget.QMUIWindowInsetLayout>

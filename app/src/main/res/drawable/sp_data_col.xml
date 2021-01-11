@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/app_color_green"/>
+    <!-- 圆角 -->
+    <corners
+        android:radius="10dp"/>
+
+    <!--<gradient-->
+        <!--android:angle="90"-->
+        <!--android:centerColor="#1F334C"-->
+        <!--android:endColor="#071944"-->
+        <!--android:startColor="#051B3A"-->
+        <!--android:type="linear" />-->
+</shape>

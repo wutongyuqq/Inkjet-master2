@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_input_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_row"
+            android:textColor="@color/qmui_config_color_gray_2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_row_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/qmui_config_color_red" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_begin_row"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:background="@android:color/white"
+        android:hint="@string/begin_row"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/qmui_config_color_black"
+        android:textColorHint="@color/qmui_config_color_gray_3"
+        android:textSize="14sp"
+        android:theme="@style/MyEditText" />
+
+    <EditText
+        android:id="@+id/edit_end_row"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:background="@android:color/white"
+        android:hint="@string/end_row"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/qmui_config_color_black"
+        android:textColorHint="@color/qmui_config_color_gray_3"
+        android:textSize="14sp"
+        android:theme="@style/MyEditText" />
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/swipe_to_see_more_tasks"
+            android:textColor="@color/qmui_config_color_gray_5"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:textColor="@color/qmui_config_color_gray_2"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"></androidx.recyclerview.widget.RecyclerView>
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_handle_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="@string/connect_device"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="@string/begin_print"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_print_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/print_settings"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_received_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left|right|center_horizontal|fill_horizontal|start|end"
+            android:longClickable="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:textColor="#00ff00"
+            android:textIsSelectable="true"
+            android:typeface="normal"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

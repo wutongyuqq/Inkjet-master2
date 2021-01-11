@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.samlss.ui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qmui_config_color_background"
+    tools:context=".ui.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/app_header_color"
+        android:fitsSystemWindows="true"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_stick_header" />
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_old_psw"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/old_psw"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/sp_spinner"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_old_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:id="@+id/iv_toggle_old_psw"
+                android:src="@mipmap/icon_edit_psw_hide"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_new_psw"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/new_psw"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/sp_spinner"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_new_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/iv_toggle_new_psw"
+                    android:src="@mipmap/icon_edit_psw_hide"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_confirm_new_psw"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/confirm_new_psw"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/sp_spinner"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_confirm_new_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:imeOptions="actionDone"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/iv_toggle_confirm_new_psw"
+                    android:src="@mipmap/icon_edit_psw_hide"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <me.samlss.ui.alpha.QMUIAlphaButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</me.samlss.ui.widget.QMUIWindowInsetLayout>

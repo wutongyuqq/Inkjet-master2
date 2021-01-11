@@ -1,0 +1,18 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<solid-->
+        <!--android:color="#FFC90E"/>-->
+    <!-- 圆角 -->
+    <corners
+        android:radius="1dp"/>
+
+    <stroke
+        android:width="1px"
+        android:color="@color/qmui_config_color_gray_2"/>
+
+    <!--<gradient-->
+        <!--android:angle="90"-->
+        <!--android:centerColor="#1F334C"-->
+        <!--android:endColor="#071944"-->
+        <!--android:startColor="#051B3A"-->
+        <!--android:type="linear" />-->
+</shape>
